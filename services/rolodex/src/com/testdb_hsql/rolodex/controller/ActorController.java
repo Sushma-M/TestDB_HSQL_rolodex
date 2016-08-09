@@ -57,7 +57,7 @@ public class ActorController {
         return actorService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Actor instances.")
     public Page<Actor> getActors(Pageable pageable) {
         LOGGER.debug("Rendering Actors list");
@@ -80,7 +80,7 @@ public class ActorController {
         this.actorService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Actor instance.")
     public Actor createActor(@RequestBody Actor instance) {

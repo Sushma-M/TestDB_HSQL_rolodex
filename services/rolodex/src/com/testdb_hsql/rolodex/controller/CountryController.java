@@ -57,7 +57,7 @@ public class CountryController {
         return countryService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Country instances.")
     public Page<Country> getCountrys(Pageable pageable) {
         LOGGER.debug("Rendering Countrys list");
@@ -80,7 +80,7 @@ public class CountryController {
         this.countryService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Country instance.")
     public Country createCountry(@RequestBody Country instance) {

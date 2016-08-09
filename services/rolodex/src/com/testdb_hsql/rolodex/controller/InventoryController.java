@@ -52,7 +52,7 @@ public class InventoryController {
         return inventoryService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Inventory instances.")
     public Page<Inventory> getInventorys(Pageable pageable) {
         LOGGER.debug("Rendering Inventorys list");
@@ -68,7 +68,7 @@ public class InventoryController {
         this.inventoryService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Inventory instance.")
     public Inventory createInventory(@RequestBody Inventory instance) {

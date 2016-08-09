@@ -62,7 +62,7 @@ public class AddressController {
         return addressService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Address instances.")
     public Page<Address> getAddresss(Pageable pageable) {
         LOGGER.debug("Rendering Addresss list");
@@ -92,7 +92,7 @@ public class AddressController {
         this.addressService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Address instance.")
     public Address createAddress(@RequestBody Address instance) {

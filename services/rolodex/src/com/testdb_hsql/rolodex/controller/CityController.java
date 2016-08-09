@@ -57,7 +57,7 @@ public class CityController {
         return cityService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of City instances.")
     public Page<City> getCitys(Pageable pageable) {
         LOGGER.debug("Rendering Citys list");
@@ -80,7 +80,7 @@ public class CityController {
         this.cityService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new City instance.")
     public City createCity(@RequestBody City instance) {

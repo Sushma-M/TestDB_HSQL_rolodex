@@ -52,7 +52,7 @@ public class CustomerController {
         return customerService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Customer instances.")
     public Page<Customer> getCustomers(Pageable pageable) {
         LOGGER.debug("Rendering Customers list");
@@ -68,7 +68,7 @@ public class CustomerController {
         this.customerService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Customer instance.")
     public Customer createCustomer(@RequestBody Customer instance) {

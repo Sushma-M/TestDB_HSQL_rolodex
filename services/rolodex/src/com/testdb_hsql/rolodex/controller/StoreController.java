@@ -62,7 +62,7 @@ public class StoreController {
         return storeService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Store instances.")
     public Page<Store> getStores(Pageable pageable) {
         LOGGER.debug("Rendering Stores list");
@@ -92,7 +92,7 @@ public class StoreController {
         this.storeService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Store instance.")
     public Store createStore(@RequestBody Store instance) {

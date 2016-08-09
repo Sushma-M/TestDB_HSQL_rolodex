@@ -62,7 +62,7 @@ public class FilmController {
         return filmService.findAll(queryFilters, pageable);
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ApiOperation(value = "Returns the list of Film instances.")
     public Page<Film> getFilms(Pageable pageable) {
         LOGGER.debug("Rendering Films list");
@@ -92,7 +92,7 @@ public class FilmController {
         this.filmService = service;
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @WMAccessVisibility(value = AccessSpecifier.APP_ONLY)
     @ApiOperation(value = "Creates a new Film instance.")
     public Film createFilm(@RequestBody Film instance) {

@@ -21,8 +21,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "COUNTRY",
       "oldName" : "COUNTRY",
@@ -34,13 +34,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_COUNTRY_COUNTRY_ID",
       "virtual" : false,
-      "columns" : [ "COUNTRY_ID" ]
+      "columns" : [ "COUNTRY_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_COUNTRY_TO_CITY_COUNTRY_ID",
@@ -74,8 +78,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "CITY",
       "oldName" : "CITY",
@@ -87,8 +91,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "COUNTRY_ID",
       "oldName" : "COUNTRY_ID",
@@ -100,13 +104,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_CITY_CITY_ID",
       "virtual" : false,
-      "columns" : [ "CITY_ID" ]
+      "columns" : [ "CITY_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_COUNTRY_TO_CITY_COUNTRY_ID",
@@ -152,8 +160,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "ADDRESS",
       "oldName" : "ADDRESS",
@@ -165,8 +173,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "ADDRESS2",
       "oldName" : "ADDRESS2",
@@ -178,8 +186,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "DISTRICT",
       "oldName" : "DISTRICT",
@@ -191,8 +199,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "CITY_ID",
       "oldName" : "CITY_ID",
@@ -204,8 +212,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "POSTAL_CODE",
       "oldName" : "POSTAL_CODE",
@@ -217,8 +225,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "PHONE",
       "oldName" : "PHONE",
@@ -230,13 +238,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_ADDRESS_ADDRESS_ID",
       "virtual" : false,
-      "columns" : [ "ADDRESS_ID" ]
+      "columns" : [ "ADDRESS_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_CITY_TO_ADDRESS_CITY_ID",
@@ -294,8 +306,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "STORE_ID",
       "oldName" : "STORE_ID",
@@ -307,8 +319,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "FIRST_NAME",
       "oldName" : "FIRST_NAME",
@@ -320,8 +332,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "LAST_NAME",
       "oldName" : "LAST_NAME",
@@ -333,8 +345,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "EMAIL",
       "oldName" : "EMAIL",
@@ -346,8 +358,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "ADDRESS_ID",
       "oldName" : "ADDRESS_ID",
@@ -359,8 +371,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : "assigned",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "ACTIVE",
       "oldName" : "ACTIVE",
@@ -372,8 +384,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "CREATE_DATE",
       "oldName" : "CREATE_DATE",
@@ -385,13 +397,17 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_CUSTOMER_CUSTOMER_ID",
       "virtual" : false,
-      "columns" : [ "CUSTOMER_ID" ]
+      "columns" : [ "CUSTOMER_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_ADDRESS_TO_CUSTOMER_ADDRESS_ID",
@@ -437,8 +453,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "FILM_ID",
       "oldName" : "FILM_ID",
@@ -450,8 +466,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "assigned",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "STORE_ID",
       "oldName" : "STORE_ID",
@@ -463,13 +479,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_INVENTORY_INVENTORY_ID",
       "virtual" : false,
-      "columns" : [ "INVENTORY_ID" ]
+      "columns" : [ "INVENTORY_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_INVENTORY_TO_STORE_STORE_ID",
@@ -515,8 +535,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "FIRST_NAME",
       "oldName" : "FIRST_NAME",
@@ -528,8 +548,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "LAST_NAME",
       "oldName" : "LAST_NAME",
@@ -541,13 +561,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_ACTOR_ACTOR_ID",
       "virtual" : false,
-      "columns" : [ "ACTOR_ID" ]
+      "columns" : [ "ACTOR_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_ACTOR_TO_FILM_ACTOR_ACTOR_ID",
@@ -581,8 +605,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "assigned",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "FILM_ID",
       "oldName" : "FILM_ID",
@@ -594,13 +618,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "assigned",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_FILM_ACTOR_ACTOR_ID_FILM_ID",
       "virtual" : false,
-      "columns" : [ "ACTOR_ID", "FILM_ID" ]
+      "columns" : [ "ACTOR_ID", "FILM_ID" ],
+      "generator" : {
+        "generatorType" : "assigned",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_ACTOR_TO_FILM_ACTOR_ACTOR_ID",
@@ -646,8 +674,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "ADDRESS_ID",
       "oldName" : "ADDRESS_ID",
@@ -659,13 +687,17 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "assigned",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_STORE_STORE_ID",
       "virtual" : false,
-      "columns" : [ "STORE_ID" ]
+      "columns" : [ "STORE_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_ADDRESS_TO_STORE_ADDRESS_ID",
@@ -723,8 +755,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : "identity",
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "TITLE",
       "oldName" : "TITLE",
@@ -736,8 +768,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "DESCRIPTION",
       "oldName" : "DESCRIPTION",
@@ -749,8 +781,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "RELEASE_YEAR",
       "oldName" : "RELEASE_YEAR",
@@ -762,8 +794,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "RENTAL_DURATION",
       "oldName" : "RENTAL_DURATION",
@@ -775,8 +807,8 @@
       "scale" : 0,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "RENTAL_RATE",
       "oldName" : "RENTAL_RATE",
@@ -788,8 +820,8 @@
       "scale" : 2,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "LENGTH",
       "oldName" : "LENGTH",
@@ -801,8 +833,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "REPLACEMENT_COST",
       "oldName" : "REPLACEMENT_COST",
@@ -814,8 +846,8 @@
       "scale" : 2,
       "nullable" : false,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "RATING",
       "oldName" : "RATING",
@@ -827,8 +859,8 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     }, {
       "name" : "SPECIAL_FEATURES",
       "oldName" : "SPECIAL_FEATURES",
@@ -840,13 +872,17 @@
       "scale" : 0,
       "nullable" : true,
       "defaultValue" : null,
-      "generator" : null,
-      "sequenceName" : null
+      "sequenceName" : null,
+      "generatorType" : null
     } ],
     "primaryKey" : {
       "name" : "GENERATED_PK_FILM_FILM_ID",
       "virtual" : false,
-      "columns" : [ "FILM_ID" ]
+      "columns" : [ "FILM_ID" ],
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      }
     },
     "relations" : [ {
       "name" : "GENERATED_FK_INVENTORY_TO_FILM_FILM_ID",

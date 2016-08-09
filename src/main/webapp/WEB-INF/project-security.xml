@@ -10,6 +10,8 @@
 
     <bean id="sslSecureFilter" class="com.wavemaker.runtime.web.filter.SSLSecureFilter" lazy-init="true"/>
 
+    <bean id="xssFilter" class="com.wavemaker.runtime.security.xss.filter.WMXSSFilter" lazy-init="true"/>
+
     <import resource="project-security-provider.xml"/>
 
 </beans> 
